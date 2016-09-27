@@ -33,7 +33,7 @@ while condition:
 	print message
 	condition = message[0:6] != "220---"
 message = send(clientSocket,"USER Anonymous")
-message = send(clientSocket,"PASS calva175@fiu.edu")
+message = send(clientSocket,"PASS abc@fiu.edu")
 message = send(clientSocket,"TYPE A")
 message = send(clientSocket,"PASV")
 start = message.find("(")

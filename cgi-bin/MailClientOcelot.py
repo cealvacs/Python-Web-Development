@@ -26,9 +26,9 @@ clientSocket.connect((serverName, serverPort))
 recv=send_recv(clientSocket, None, '220')
 
 clientName = 'Carlos'
-userName="calva175"
+userName="def"
 userServer="fiu.edu"
-toName="downeyt"
+toName="abc"
 toServer="cis.fiu.edu"
 #Send HELO command and print server response.
 heloCommand='EHLO %s' % clientName
@@ -48,7 +48,7 @@ send(clientSocket, "From: Carlos Alva <%s@%s>" % (userName, userServer));
 send(clientSocket, "Subject: Simple Mail Message");
 send(clientSocket, "To: %s@%s" % (toName, toServer));
 send(clientSocket,"X-MC-Tags: %s" % userName);
-send(clientSocket, "This is the Test Email for Extra credit #3\nCarlos Alva");
+send(clientSocket, "This is the Test Email for Extra credit #3\nCA");
 #Message ends with a single period.
 send_recv(clientSocket, ".", '250');
 #Send QUIT command and get server response.
